@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>KriptoKu</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/KriptoKu.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <title>Vigenere Cipher</title>
+
+    <style>
+        .hasil{
+            font-size:20px ;
+            font-family: 'Mulish';
+            /* font-style: italic ; */
+            color: aliceblue;
+            
+        }
+        
+
+        .form{
+            border-radius: 6px;
+            border: 0ch;
+        }
+    </style>
+</head>
+<body >
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="homepage.html">KriptoKu</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="diagonal.html">Diagonal Cipher</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <h1 class="center">Vigenere Cipher</h1>
+        
+        <div class="d-flex justify-content-center">
+            <table class="center">
+                <tbody>
+                    <tr>
+                        <td><label class="p" for="text"><h3> Text :</h3></label></td>
+                        <td class="form" ><textarea style="width: 700px;padding: 15px ; height:250px ;" class="form" id="text" placeholder="Silahkan Masukkan Text..." cols="50" rows="10" style="height:40em; height:15em;width: 256px;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="key"><h3> Key :</h3></label></td>
+                        <td class="form"><input style="width: 700px; padding: 15px ;height: 45px;" class="form" type="text" placeholder="Masukkan Key..." id="key" style="width: 256px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="text-center mt-4">
+                                <a class="btn btn-xl btn-outline-light" onclick="cipherText();">
+                                    Enkripsi
+                                </a>
+
+                                <a class="btn btn-xl btn-outline-light" onclick="decrypt();">
+                                    Dekripsi
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="hasil"><h3>Hasil :</h3></label></td>
+                        <td style="display:flex ; padding-left:10px ;"><h5 id="hasil"></h5></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </header>
+       
+        <!-- Tools Section-->
+    
+    <script type="text/javascript" src="js/vigenere.js"></script>
+</body>
+</html>
